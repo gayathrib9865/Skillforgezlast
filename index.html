@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Forgez</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Background Gradient */
+        body {
+            background: linear-gradient(135deg, #1e1e1e, #571845, #ff5733);
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            animation: slideDown 1s ease-in-out;
+        }
+
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid white;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Glassmorphism Container */
+        .container {
+            width: 50%;
+            margin: 120px auto;
+            padding: 30px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Stylish Checklist */
+        .checklist {
+            margin: 20px auto;
+            text-align: left;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .checklist .item {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            margin: 10px 0;
+            opacity: 0;
+            transform: translateX(-30px);
+            animation: fadeInLeft 1s ease-out forwards;
+        }
+
+        .checklist .icon {
+            font-size: 22px;
+            margin-right: 10px;
+            color: #ffcc00;
+        }
+
+        /* Motivational Quotes Section */
+        .quotes {
+            margin-top: 40px;
+            font-style: italic;
+            font-size: 18px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+            animation: fadeIn 1.5s ease-in-out 1.5s forwards;
+        }
+
+        /* Button Styling */
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .custom-button {
+            background: linear-gradient(45deg, #0088cc, #005f8a);
+            color: white;
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+            text-decoration: none;
+            animation: fadeInUp 1s ease-in-out 1.2s;
+        }
+
+        .custom-button:hover {
+            background: linear-gradient(45deg, #00aaff, #0077b6);
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 136, 204, 0.3);
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 80%;
+            }
+            .header {
+                font-size: 18px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            .checklist {
+                padding: 15px;
+            }
+            .checklist .item {
+                font-size: 16px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="nav">
+        <div class="header">Skill Forgez - Force of Knowledge</div>
+        <div class="logo">
+            <img src="img.png" alt="Logo">
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+        <h1>Master the Market Like a Pro!</h1>
+
+        <!-- Stylish Checklist -->
+        <div class="checklist">
+            <div class="item"><span class="icon">✅</span> Learn technical and fundamental analysis</div>
+            <div class="item"><span class="icon">✅</span> Manage your risks like a pro</div>
+            <div class="item"><span class="icon">✅</span> Stick to your strategy</div>
+            <div class="item"><span class="icon">✅</span> Stay disciplined — even when it’s tough</div>
+        </div>
+
+        <!-- Motivational Quotes -->
+        <div class="quotes">💡 "The market rewards patience and discipline. Stay the course!"</div>
+
+        <!-- Join Telegram Button -->
+        <div class="button-container">
+            <a href="tg://resolve?domain=Skillforgez" class="custom-button">Join Us on Telegram</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
